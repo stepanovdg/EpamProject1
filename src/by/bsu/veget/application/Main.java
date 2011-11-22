@@ -7,6 +7,8 @@ import by.bsu.veget.out.VegetOutManager;
 import by.bsu.veget.reports.VegetStorageReport;
 import by.bsu.veget.reports.VegetStorageXMLReport;
 
+import java.io.File;
+
 class Main {
      /**
      * @param args
@@ -18,9 +20,9 @@ class Main {
         ReadVeget rv = new ReadVeget();
         ReadSalat rs = new ReadSalat();
         VegetStorageReport vr = new VegetStorageReport();
-        VegetStorageXMLReport vrxml = new VegetStorageXMLReport("vegetStorage.xml");
+        VegetStorageXMLReport vrxml = new VegetStorageXMLReport("XML"+ File.separator+"vegetStorage.xml");
         try {
-            rv.readVegetToProgram("txt");
+            rv.readVegetToProgram("sax");
             vr.allVeget();
             vr.freeSpace();
             vr.allSalatVeget(rs.readSalatToProgram(), true, true);

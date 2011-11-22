@@ -15,8 +15,17 @@
   </component>
   <component name="ChangeListManager">
     <list id="a7821d28-d93b-4fff-9776-74243519b651" name="Default" comment="" />
-    <list default="true" id="707d13da-8e2c-4d4e-88f8-01df4bf06aa5" name="1 branch" comment="2 branch add all other files">
+    <list default="true" id="707d13da-8e2c-4d4e-88f8-01df4bf06aa5" name="1 branch" comment="XML gfgr">
+      <change type="DELETED" beforePath="C:\Users\Дмитрий\Documents\Java\Intelig.Idea\EpamProject\src\by\bsu\veget\xml\initVeget.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Дмитрий\Documents\Java\Intelig.Idea\EpamProject\src\by\bsu\veget\xml\initVeget.xsd" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Дмитрий\Documents\Java\Intelig.Idea\EpamProject\src\by\bsu\veget\xml\vegetStorage.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Дмитрий\Documents\Java\Intelig.Idea\EpamProject\vegetStorage.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Дмитрий\Documents\Java\Intelig.Idea\EpamProject\vegetStorage.xml" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\Дмитрий\Documents\Java\Intelig.Idea\EpamProject\initVeget.xml" afterPath="$PROJECT_DIR$/XML/initVeget.xml" />
+      <change type="MOVED" beforePath="C:\Users\Дмитрий\Documents\Java\Intelig.Idea\EpamProject\initVeget.xsd" afterPath="$PROJECT_DIR$/XML/initVeget.xsd" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/bsu/veget/application/Main.java" afterPath="$PROJECT_DIR$/src/by/bsu/veget/application/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/bsu/veget/data/ReadVeget.java" afterPath="$PROJECT_DIR$/src/by/bsu/veget/data/ReadVeget.java" />
     </list>
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +85,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/bsu/veget/application/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="67" selection-start="766" selection-end="766" vertical-scroll-proportion="0.0">
+            <state line="24" column="38" selection-start="807" selection-end="807" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -85,7 +94,7 @@
       <file leaf-file-name="ReadVeget.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/bsu/veget/data/ReadVeget.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="18" selection-start="923" selection-end="923" vertical-scroll-proportion="0.0">
+            <state line="112" column="64" selection-start="3488" selection-end="3488" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -101,16 +110,16 @@
         </entry>
       </file>
       <file leaf-file-name="initVeget.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/initVeget.xml">
+        <entry file="file://$PROJECT_DIR$/XML/initVeget.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="158" column="20" selection-start="4928" selection-end="4928" vertical-scroll-proportion="0.0">
+            <state line="158" column="13" selection-start="4928" selection-end="4928" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="initVeget.xsd" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/initVeget.xsd">
+        <entry file="file://$PROJECT_DIR$/XML/initVeget.xsd">
           <provider selected="true" editor-type-id="text-editor">
             <state line="43" column="40" selection-start="1657" selection-end="1657" vertical-scroll-proportion="0.0">
               <folding />
@@ -119,18 +128,9 @@
         </entry>
       </file>
       <file leaf-file-name="vegetStorage.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vegetStorage.xml">
+        <entry file="file://$PROJECT_DIR$/XML/vegetStorage.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="74" selection-start="261" selection-end="261" vertical-scroll-proportion="0.37777779">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="initVeget.xsd" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/by/bsu/veget/xml/initVeget.xsd">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="38" selection-start="1561" selection-end="1561" vertical-scroll-proportion="0.0">
+            <state line="1" column="6" selection-start="45" selection-end="45" vertical-scroll-proportion="0.048991356">
               <folding />
             </state>
           </provider>
@@ -186,7 +186,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/by/bsu/veget/ierarh/PumkinVeget.java" />
         <option value="$PROJECT_DIR$/src/by/bsu/veget/ierarh/RootVeget.java" />
         <option value="$PROJECT_DIR$/src/by/bsu/veget/storage/VegetStorageController.java" />
         <option value="$PROJECT_DIR$/src/by/bsu/veget/data/VegetReceptJFrame.java" />
@@ -196,12 +195,13 @@
         <option value="$PROJECT_DIR$/initVeget.xsd" />
         <option value="$PROJECT_DIR$/initVeget.xml" />
         <option value="$PROJECT_DIR$/src/by/bsu/veget/parsers/Analyzer.java" />
-        <option value="$PROJECT_DIR$/src/by/bsu/veget/data/ReadVeget.java" />
         <option value="$PROJECT_DIR$/src/by/bsu/veget/parsers/VegetHandler.java" />
         <option value="$PROJECT_DIR$/src/by/bsu/veget/parsers/StAXVegetParser.java" />
-        <option value="$PROJECT_DIR$/src/by/bsu/veget/application/Main.java" />
         <option value="$PROJECT_DIR$/src/by/bsu/veget/reports/VegetStorageXMLReport.java" />
         <option value="$PROJECT_DIR$/vegetStorage.xml" />
+        <option value="$PROJECT_DIR$/src/by/bsu/veget/application/Main.java" />
+        <option value="$PROJECT_DIR$/src/by/bsu/veget/data/ReadVeget.java" />
+        <option value="$PROJECT_DIR$/XML/vegetStorage.xml" />
       </list>
     </option>
   </component>
@@ -288,15 +288,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="veget" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xml" />
+              <option name="myItemId" value="XML" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -381,6 +373,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ierarh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EpamProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EpamProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="veget" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -747,7 +761,7 @@
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -761,7 +775,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32297194" sideWeight="0.67164177" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32297194" sideWeight="0.67164177" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31840795" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="100" y="100" width="1166" height="538" />
@@ -796,7 +810,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="2 branch add all other files" />
+    <option name="LAST_COMMIT_MESSAGE" value="2 branch add all other files commit worspace" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -813,6 +827,7 @@
     <MESSAGE value="1 branch" />
     <MESSAGE value="2 branch" />
     <MESSAGE value="2 branch add all other files" />
+    <MESSAGE value="2 branch add all other files commit worspace" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -871,29 +886,9 @@
         <state line="6" column="19" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bsu/veget/xml/vegetStorage.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/by/bsu/veget/parsers/VegetHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="8" selection-start="737" selection-end="737" vertical-scroll-proportion="0.33333334" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bsu/veget/xml/initVeget.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="9" selection-start="585" selection-end="585" vertical-scroll-proportion="0.33333334" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bsu/veget/application/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="67" selection-start="766" selection-end="766" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bsu/veget/data/ReadVeget.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="18" selection-start="923" selection-end="923" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/by/bsu/veget/reports/VegetStorageXMLReport.java">
@@ -901,19 +896,9 @@
         <state line="82" column="56" selection-start="3466" selection-end="3466" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/initVeget.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="158" column="20" selection-start="4928" selection-end="4928" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/initVeget.xsd">
+    <entry file="file://$PROJECT_DIR$/XML/initVeget.xsd">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="40" selection-start="1657" selection-end="1657" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bsu/veget/xml/initVeget.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="38" selection-start="1561" selection-end="1561" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/by/bsu/veget/ierarh/Vegetable.java">
@@ -931,9 +916,30 @@
         <state line="111" column="30" selection-start="4379" selection-end="4379" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vegetStorage.xml">
+    <entry file="file://$PROJECT_DIR$/XML/initVeget.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="74" selection-start="261" selection-end="261" vertical-scroll-proportion="0.37777779">
+        <state line="158" column="13" selection-start="4928" selection-end="4928" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bsu/veget/application/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="38" selection-start="807" selection-end="807" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bsu/veget/data/ReadVeget.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="112" column="64" selection-start="3488" selection-end="3488" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XML/vegetStorage.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="6" selection-start="45" selection-end="45" vertical-scroll-proportion="0.048991356">
           <folding />
         </state>
       </provider>

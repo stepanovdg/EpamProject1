@@ -23,7 +23,8 @@ import java.io.*;
  * @author Stepanov Dmitriy
  */
 public class ReadVeget {
-    private static final String INIT_VEGET_XML = "initVeget.xml";
+    private static final String INIT_VEGET_XML = "XML"+File.separator+"initVeget.xml";
+    private static final String LISTVEGET_TXT = "listveget.txt";
     private VegetStorageController vsc = new VegetStorageController();
 
     /**
@@ -109,7 +110,7 @@ public class ReadVeget {
     private void readVegetFromTxt() throws VegetException {
         BufferedReader in;
         try {
-            in = new BufferedReader(new FileReader("listveget.txt"));
+            in = new BufferedReader(new FileReader(LISTVEGET_TXT));
         } catch (FileNotFoundException e) {
             String msg = "Don't exist such file of listvegetables in this directory";
             throw new VegetException(msg, e);
