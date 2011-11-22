@@ -15,101 +15,8 @@
   </component>
   <component name="ChangeListManager">
     <list id="a7821d28-d93b-4fff-9776-74243519b651" name="Default" comment="" />
-    <list default="true" id="707d13da-8e2c-4d4e-88f8-01df4bf06aa5" name="1 branch" comment="2 branch">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/application/Main.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/data/ReadSalat.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/data/ReadVeget.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/data/VegetReceptJFrame$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/data/VegetReceptJFrame$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/data/VegetReceptJFrame$3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/data/VegetReceptJFrame$4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/data/VegetReceptJFrame$5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/data/VegetReceptJFrame$6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/data/VegetReceptJFrame$7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/data/VegetReceptJFrame$8.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/data/VegetReceptJFrame.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/enums/QualityEnum.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/enums/VegetClassEnum.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/enums/VegetEnum.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/enums/VegetMethodOfPreparationEnum.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/exception/VegetException.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/ierarh/BeansVeget.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/ierarh/LeafsVeget.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/ierarh/OnionVeget.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/ierarh/PumkinVeget.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/ierarh/RootVeget.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/ierarh/Vegetable.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/ierarh/VegetableIF.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/init/VegetableFactory$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/init/VegetableFactory.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/init/VegetableFactoryIF.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/out/VegetOutManager.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/reports/VegetStorageReport.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/salat/AbstractVegetProcessorProgram.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/salat/VegetProcessorEnvironment.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/salat/VegetProcessorEnvironmentIF.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/storage/VegetStorage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/storage/VegetStorageController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/storage/VegetStorageIF.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/by/bsu/veget/storage/VegetStorageSingletone.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/recipe" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.classpath" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/xerces.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.project" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EpamProject.eml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EpamProject.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initVeget.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initVeget.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/listveget.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/application/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/data/ReadSalat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/data/ReadVeget.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/data/VegetReceptJFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/enums/QualityEnum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/enums/VegetClassEnum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/enums/VegetEnum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/enums/VegetMethodOfPreparationEnum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/exception/VegetException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/ierarh/BeansVeget.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/ierarh/LeafsVeget.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/ierarh/OnionVeget.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/ierarh/PumkinVeget.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/ierarh/RootVeget.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/ierarh/Vegetable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/ierarh/VegetableIF.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/init/VegetableFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/init/VegetableFactoryIF.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/out/VegetOutManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/parsers/Analyzer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/parsers/StAXVegetParser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/parsers/VegetHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/reports/VegetStorageReport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/reports/VegetStorageXMLReport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/salat/AbstractVegetProcessorProgram.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/salat/VegetProcessorEnvironment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/salat/VegetProcessorEnvironmentIF.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/storage/VegetStorage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/storage/VegetStorageController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/storage/VegetStorageIF.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/storage/VegetStorageSingletone.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/xml/initVeget.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/xml/initVeget.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/veget/xml/vegetStorage.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vegetStorage.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vegetStorage.xml" />
+    <list default="true" id="707d13da-8e2c-4d4e-88f8-01df4bf06aa5" name="1 branch" comment="2 branch add all other files">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -888,7 +795,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="2 branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="2 branch add all other files" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -904,6 +811,7 @@
     <MESSAGE value="first load to github" />
     <MESSAGE value="1 branch" />
     <MESSAGE value="2 branch" />
+    <MESSAGE value="2 branch add all other files" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
