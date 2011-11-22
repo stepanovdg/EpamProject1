@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vegetables>
+    <vegetable name="dill">
+        <uid>d00000002</uid>
+        <country>USA</country>
+        <data>
+            <year>111</year>
+            <month>--09--</month>
+            <day>---2</day>
+        </data>
+        <weightPerKg>0.6</weightPerKg>
+        <pricePerKg>202.0</pricePerKg>
+        <qualityOfVeget>EATABLE</qualityOfVeget>
+        <uniqParameter>str2</uniqParameter>
+    </vegetable>
+    <vegetable name="mint">
+        <uid>d00000003</uid>
+        <country>USA</country>
+        <data>
+            <year>111</year>
+            <month>--08--</month>
+            <day>---0</day>
+        </data>
+        <weightPerKg>0.7</weightPerKg>
+        <pricePerKg>203.0</pricePerKg>
+        <qualityOfVeget>GOOD</qualityOfVeget>
+        <uniqParameter>str3</uniqParameter>
+    </vegetable>
+    <vegetable name="cucumber">
+        <uid>d00000005</uid>
+        <country>USA</country>
+        <data>
+            <year>111</year>
+            <month>--06--</month>
+            <day>---1</day>
+        </data>
+        <weightPerKg>0.9</weightPerKg>
+        <pricePerKg>205.0</pricePerKg>
+        <qualityOfVeget>GOOD</qualityOfVeget>
+        <uniqParameter>str5</uniqParameter>
+    </vegetable>
+    <vegetable name="potatoes">
+        <uid>d00000006</uid>
+        <country>USA</country>
+        <data>
+            <year>111</year>
+            <month>--06--</month>
+            <day>---2</day>
+        </data>
+        <weightPerKg>1.0</weightPerKg>
+        <pricePerKg>206.0</pricePerKg>
+        <qualityOfVeget>GOOD</qualityOfVeget>
+        <uniqParameter>6.0</uniqParameter>
+    </vegetable>
+    <vegetable name="dill">
+        <uid>d00000008</uid>
+        <country>USA</country>
+        <data>
+            <year>111</year>
+            <month>--09--</month>
+            <day>---2</day>
+        </data>
+        <weightPerKg>0.6</weightPerKg>
+        <pricePerKg>202.0</pricePerKg>
+        <qualityOfVeget>EATABLE</qualityOfVeget>
+        <uniqParameter>str2</uniqParameter>
+    </vegetable>
+    <vegetable name="mint">
+        <uid>d00000009</uid>
+        <country>USA</country>
+        <data>
+            <year>111</year>
+            <month>--08--</month>
+            <day>---0</day>
+        </data>
+        <weightPerKg>0.7</weightPerKg>
+        <pricePerKg>203.0</pricePerKg>
+        <qualityOfVeget>GOOD</qualityOfVeget>
+        <uniqParameter>str3</uniqParameter>
+    </vegetable>
+    <vegetable name="tomato">
+        <uid>d00000010</uid>
+        <country>USA</country>
+        <data>
+            <year>111</year>
+            <month>--07--</month>
+            <day>---4</day>
+        </data>
+        <weightPerKg>0.8</weightPerKg>
+        <pricePerKg>204.0</pricePerKg>
+        <qualityOfVeget>GOOD</qualityOfVeget>
+        <uniqParameter>str4</uniqParameter>
+    </vegetable>
+    <vegetable name="cucumber">
+        <uid>d00000011</uid>
+        <country>USA</country>
+        <data>
+            <year>111</year>
+            <month>--06--</month>
+            <day>---1</day>
+        </data>
+        <weightPerKg>0.9</weightPerKg>
+        <pricePerKg>205.0</pricePerKg>
+        <qualityOfVeget>EATABLE</qualityOfVeget>
+        <uniqParameter>str5</uniqParameter>
+    </vegetable>
+    <vegetable name="potatoes">
+        <uid>d00000012</uid>
+        <country>USA</country>
+        <data>
+            <year>111</year>
+            <month>--06--</month>
+            <day>---2</day>
+        </data>
+        <weightPerKg>1.0</weightPerKg>
+        <pricePerKg>206.0</pricePerKg>
+        <qualityOfVeget>GOOD</qualityOfVeget>
+        <uniqParameter>6.0</uniqParameter>
+    </vegetable>
+</vegetables>

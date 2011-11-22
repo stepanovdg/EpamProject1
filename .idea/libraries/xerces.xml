@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="xerces">
+    <CLASSES>
+      <root url="file://C:/Program Files/Java/jdk1.7.0/lib/Xerces-J-src.2.11.0/xerces-2_11_0/src" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://C:/Program Files/Java/jdk1.7.0/lib/Xerces-J-src.2.11.0/xerces-2_11_0/docs" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://C:/Program Files/Java/jdk1.7.0/lib/Xerces-J-src.2.11.0/xerces-2_11_0/src" />
+    </SOURCES>
+  </library>
+</component>

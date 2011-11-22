@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vegetables xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="initVeget.xsd">
+    <vegetable name="cabbage">
+        <uid>d00000001</uid>
+        <country>usa</country>
+        <data>
+            <year>2011</year>
+            <month>--10--</month>
+            <day>---11</day>
+        </data>
+        <weightPerKg>0.5</weightPerKg>
+        <pricePerKg>201</pricePerKg>
+        <qualityOfVeget>Good</qualityOfVeget>
+        <uniqParameter>1</uniqParameter>
+    </vegetable>
+    <vegetable name="dill">
+        <uid>d00000002</uid>
+        <country>usa</country>
+        <data>
+            <year>2011</year>
+            <month>--09--</month>
+            <day>---11</day>
+        </data>
+        <weightPerKg>0.6</weightPerKg>
+        <pricePerKg>202</pricePerKg>
+        <qualityOfVeget>Eatable</qualityOfVeget>
+        <uniqParameter>str2</uniqParameter>
+    </vegetable>
+    <vegetable name="mint">
+        <uid>d00000003</uid>
+        <country>usa</country>
+        <data>
+            <year>2011</year>
+            <month>--08--</month>
+            <day>---11</day>
+        </data>
+        <weightPerKg>0.7</weightPerKg>
+        <pricePerKg>203</pricePerKg>
+        <qualityOfVeget>Good</qualityOfVeget>
+        <uniqParameter>str3</uniqParameter>
+    </vegetable>
+    <vegetable name="tomato">
+        <uid>d00000004</uid>
+        <country>usa</country>
+        <data>
+            <year>2011</year>
+            <month>--07--</month>
+            <day>---11</day>
+        </data>
+        <weightPerKg>0.8</weightPerKg>
+        <pricePerKg>204</pricePerKg>
+        <qualityOfVeget>Good</qualityOfVeget>
+        <uniqParameter>str4</uniqParameter>
+    </vegetable>
+    <vegetable name="cucumber">
+        <uid>d00000005</uid>
+        <country>usa</country>
+        <data>
+            <year>2011</year>
+            <month>--06--</month>
+            <day>---11</day>
+        </data>
+        <weightPerKg>0.9</weightPerKg>
+        <pricePerKg>205</pricePerKg>
+        <qualityOfVeget>Good</qualityOfVeget>
+        <uniqParameter>str5</uniqParameter>
+    </vegetable>
+    <vegetable name="potatoes">
+        <uid>d00000006</uid>
+        <country>usa</country>
+        <data>
+            <year>2011</year>
+            <month>--06--</month>
+            <day>---11</day>
+        </data>
+        <weightPerKg>1.0</weightPerKg>
+        <pricePerKg>206</pricePerKg>
+        <qualityOfVeget>Good</qualityOfVeget>
+        <uniqParameter>6</uniqParameter>
+    </vegetable>
+    <vegetable name="cabbage">
+        <uid>d00000007</uid>
+        <country>usa</country>
+        <data>
+            <year>2011</year>
+            <month>--10--</month>
+            <day>---11</day>
+        </data>
+        <weightPerKg>0.5</weightPerKg>
+        <pricePerKg>201</pricePerKg>
+        <qualityOfVeget>Good</qualityOfVeget>
+        <uniqParameter>1</uniqParameter>
+    </vegetable>
+    <vegetable name="dill">
+        <uid>d00000008</uid>
+        <country>usa</country>
+        <data>
+            <year>2011</year>
+            <month>--09--</month>
+            <day>---11</day>
+        </data>
+        <weightPerKg>0.6</weightPerKg>
+        <pricePerKg>202</pricePerKg>
+        <qualityOfVeget>Eatable</qualityOfVeget>
+        <uniqParameter>str2</uniqParameter>
+    </vegetable>
+    <vegetable name="mint">
+        <uid>d00000009</uid>
+        <country>usa</country>
+        <data>
+            <year>2011</year>
+            <month>--08--</month>
+            <day>---11</day>
+        </data>
+        <weightPerKg>0.7</weightPerKg>
+        <pricePerKg>203</pricePerKg>
+        <qualityOfVeget>Good</qualityOfVeget>
+        <uniqParameter>str3</uniqParameter>
+    </vegetable>
+    <vegetable name="tomato">
+        <uid>d00000010</uid>
+        <country>usa</country>
+        <data>
+            <year>2011</year>
+            <month>--07--</month>
+            <day>---11</day>
+        </data>
+        <weightPerKg>0.8</weightPerKg>
+        <pricePerKg>204</pricePerKg>
+        <qualityOfVeget>Good</qualityOfVeget>
+        <uniqParameter>str4</uniqParameter>
+    </vegetable>
+    <vegetable name="cucumber">
+        <uid>d00000011</uid>
+        <country>usa</country>
+        <data>
+            <year>2011</year>
+            <month>--06--</month>
+            <day>---11</day>
+        </data>
+        <weightPerKg>0.9</weightPerKg>
+        <pricePerKg>205</pricePerKg>
+        <qualityOfVeget>Eatable</qualityOfVeget>
+        <uniqParameter>str5</uniqParameter>
+    </vegetable>
+    <vegetable name="potatoes">
+        <uid>d00000012</uid>
+        <country>usa</country>
+        <data>
+            <year>2011</year>
+            <month>--06--</month>
+            <day>---11</day>
+        </data>
+        <weightPerKg>1.0</weightPerKg>
+        <pricePerKg>206</pricePerKg>
+        <qualityOfVeget>Good</qualityOfVeget>
+        <uniqParameter>6</uniqParameter>
+    </vegetable>
+</vegetables>
