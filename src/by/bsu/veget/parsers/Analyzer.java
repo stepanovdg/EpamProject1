@@ -35,10 +35,10 @@ public class Analyzer {
             s[3] = getBabyValue(dateElement, ("month")).replace("-","");
             s[4] = getBabyValue(dateElement, ("day")).replace("-","");
 
-            s[5] = getBabyValue(vegetElement, ("weightPerKg"));
-            s[6] = getBabyValue(vegetElement, ("pricePerKg"));
-            s[7] = getBabyValue(vegetElement, ("qualityOfVeget"));
-            s[8] = getBabyValue(vegetElement, ("uniqParameter"));
+            s[5] = getBabyValue(vegetElement, ("weight-per-kg"));
+            s[6] = getBabyValue(vegetElement, ("price-per-kg"));
+            s[7] = getBabyValue(vegetElement, ("quality-of-veget"));
+            s[8] = getBabyValue(vegetElement, ("uniq-parameter"));
             VegetableFactory vegf = new VegetableFactory(s);
             vsc.addVeget((Vegetable) vegf.createVeget());
 

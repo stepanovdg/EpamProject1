@@ -8,10 +8,10 @@
             <month>--10--</month>
             <day>---11</day>
         </data>
-        <weightPerKg>0.5</weightPerKg>
-        <pricePerKg>201</pricePerKg>
-        <qualityOfVeget>Good</qualityOfVeget>
-        <uniqParameter>1</uniqParameter>
+        <weight-per-kg>0.5</weight-per-kg>
+        <price-per-kg>201</price-per-kg>
+        <quality-of-veget>Good</quality-of-veget>
+        <uniq-parameter>1</uniq-parameter>
     </vegetable>
     <vegetable name="dill">
         <uid>d00000002</uid>
@@ -21,10 +21,10 @@
             <month>--09--</month>
             <day>---11</day>
         </data>
-        <weightPerKg>0.6</weightPerKg>
-        <pricePerKg>202</pricePerKg>
-        <qualityOfVeget>Eatable</qualityOfVeget>
-        <uniqParameter>str2</uniqParameter>
+        <weight-per-kg>0.6</weight-per-kg>
+        <price-per-kg>202</price-per-kg>
+        <quality-of-veget>Eatable</quality-of-veget>
+        <uniq-parameter>str2</uniq-parameter>
     </vegetable>
     <vegetable name="mint">
         <uid>d00000003</uid>
@@ -34,10 +34,10 @@
             <month>--08--</month>
             <day>---11</day>
         </data>
-        <weightPerKg>0.7</weightPerKg>
-        <pricePerKg>203</pricePerKg>
-        <qualityOfVeget>Good</qualityOfVeget>
-        <uniqParameter>str3</uniqParameter>
+        <weight-per-kg>0.7</weight-per-kg>
+        <price-per-kg>203</price-per-kg>
+        <quality-of-veget>Good</quality-of-veget>
+        <uniq-parameter>str3</uniq-parameter>
     </vegetable>
     <vegetable name="tomato">
         <uid>d00000004</uid>
@@ -47,10 +47,10 @@
             <month>--07--</month>
             <day>---11</day>
         </data>
-        <weightPerKg>0.8</weightPerKg>
-        <pricePerKg>204</pricePerKg>
-        <qualityOfVeget>Good</qualityOfVeget>
-        <uniqParameter>str4</uniqParameter>
+        <weight-per-kg>0.8</weight-per-kg>
+        <price-per-kg>204</price-per-kg>
+        <quality-of-veget>Good</quality-of-veget>
+        <uniq-parameter>str4</uniq-parameter>
     </vegetable>
     <vegetable name="cucumber">
         <uid>d00000005</uid>
@@ -60,10 +60,10 @@
             <month>--06--</month>
             <day>---11</day>
         </data>
-        <weightPerKg>0.9</weightPerKg>
-        <pricePerKg>205</pricePerKg>
-        <qualityOfVeget>Good</qualityOfVeget>
-        <uniqParameter>str5</uniqParameter>
+        <weight-per-kg>0.9</weight-per-kg>
+        <price-per-kg>205</price-per-kg>
+        <quality-of-veget>Good</quality-of-veget>
+        <uniq-parameter>str5</uniq-parameter>
     </vegetable>
     <vegetable name="potatoes">
         <uid>d00000006</uid>
@@ -73,10 +73,10 @@
             <month>--06--</month>
             <day>---11</day>
         </data>
-        <weightPerKg>1.0</weightPerKg>
-        <pricePerKg>206</pricePerKg>
-        <qualityOfVeget>Good</qualityOfVeget>
-        <uniqParameter>6</uniqParameter>
+        <weight-per-kg>1.0</weight-per-kg>
+        <price-per-kg>206</price-per-kg>
+        <quality-of-veget>Good</quality-of-veget>
+        <uniq-parameter>6</uniq-parameter>
     </vegetable>
     <vegetable name="cabbage">
         <uid>d00000007</uid>
@@ -86,10 +86,10 @@
             <month>--10--</month>
             <day>---11</day>
         </data>
-        <weightPerKg>0.5</weightPerKg>
-        <pricePerKg>201</pricePerKg>
-        <qualityOfVeget>Good</qualityOfVeget>
-        <uniqParameter>1</uniqParameter>
+        <weight-per-kg>0.5</weight-per-kg>
+        <price-per-kg>201</price-per-kg>
+        <quality-of-veget>Good</quality-of-veget>
+        <uniq-parameter>1</uniq-parameter>
     </vegetable>
     <vegetable name="dill">
         <uid>d00000008</uid>
@@ -99,10 +99,10 @@
             <month>--09--</month>
             <day>---11</day>
         </data>
-        <weightPerKg>0.6</weightPerKg>
-        <pricePerKg>202</pricePerKg>
-        <qualityOfVeget>Eatable</qualityOfVeget>
-        <uniqParameter>str2</uniqParameter>
+        <weight-per-kg>0.6</weight-per-kg>
+        <price-per-kg>202</price-per-kg>
+        <quality-of-veget>Eatable</quality-of-veget>
+        <uniq-parameter>str2</uniq-parameter>
     </vegetable>
     <vegetable name="mint">
         <uid>d00000009</uid>
@@ -112,10 +112,10 @@
             <month>--08--</month>
             <day>---11</day>
         </data>
-        <weightPerKg>0.7</weightPerKg>
-        <pricePerKg>203</pricePerKg>
-        <qualityOfVeget>Good</qualityOfVeget>
-        <uniqParameter>str3</uniqParameter>
+        <weight-per-kg>0.7</weight-per-kg>
+        <price-per-kg>203</price-per-kg>
+        <quality-of-veget>Good</quality-of-veget>
+        <uniq-parameter>str3</uniq-parameter>
     </vegetable>
     <vegetable name="tomato">
         <uid>d00000010</uid>
@@ -125,10 +125,10 @@
             <month>--07--</month>
             <day>---11</day>
         </data>
-        <weightPerKg>0.8</weightPerKg>
-        <pricePerKg>204</pricePerKg>
-        <qualityOfVeget>Good</qualityOfVeget>
-        <uniqParameter>str4</uniqParameter>
+        <weight-per-kg>0.8</weight-per-kg>
+        <price-per-kg>204</price-per-kg>
+        <quality-of-veget>Good</quality-of-veget>
+        <uniq-parameter>str4</uniq-parameter>
     </vegetable>
     <vegetable name="cucumber">
         <uid>d00000011</uid>
@@ -138,10 +138,10 @@
             <month>--06--</month>
             <day>---11</day>
         </data>
-        <weightPerKg>0.9</weightPerKg>
-        <pricePerKg>205</pricePerKg>
-        <qualityOfVeget>Eatable</qualityOfVeget>
-        <uniqParameter>str5</uniqParameter>
+        <weight-per-kg>0.9</weight-per-kg>
+        <price-per-kg>205</price-per-kg>
+        <quality-of-veget>Eatable</quality-of-veget>
+        <uniq-parameter>str5</uniq-parameter>
     </vegetable>
     <vegetable name="potatoes">
         <uid>d00000012</uid>
@@ -151,9 +151,9 @@
             <month>--06--</month>
             <day>---11</day>
         </data>
-        <weightPerKg>1.0</weightPerKg>
-        <pricePerKg>206</pricePerKg>
-        <qualityOfVeget>Good</qualityOfVeget>
-        <uniqParameter>6</uniqParameter>
+        <weight-per-kg>1.0</weight-per-kg>
+        <price-per-kg>206</price-per-kg>
+        <quality-of-veget>Good</quality-of-veget>
+        <uniq-parameter>6</uniq-parameter>
     </vegetable>
 </vegetables>

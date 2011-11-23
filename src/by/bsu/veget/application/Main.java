@@ -17,7 +17,7 @@ class Main {
 
     public static void main(String[] args) {
         //VegetOutManager.getInstance().setPrevStream(System.out);
-        ReadVeget rv = new ReadVeget();
+        ReadVeget rv = new ReadVeget("XML"+File.separator+"initVeget.xml","listveget.txt");
         ReadSalat rs = new ReadSalat();
         VegetStorageReport vr = new VegetStorageReport();
         VegetStorageXMLReport vrxml = new VegetStorageXMLReport("XML"+ File.separator+"vegetStorage.xml");

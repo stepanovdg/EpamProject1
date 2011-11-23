@@ -89,16 +89,16 @@ public class VegetStorageXMLReport {
                 item.appendChild(doc.createTextNode("---"+(new Integer(veget.getColectDate().getTime().getDay())).toString()));
                 data.appendChild(item);
                 veg.appendChild(data);
-                item = doc.createElementNS(null, "weightPerKg");            // Create another Element
+                item = doc.createElementNS(null, "weight-per-kg");            // Create another Element
                 item.appendChild(doc.createTextNode((veget.getWeightPerKg()).toString()));
                 veg.appendChild(item);
-                item = doc.createElementNS(null, "pricePerKg");            // Create another Element
+                item = doc.createElementNS(null, "price-per-kg");            // Create another Element
                 item.appendChild(doc.createTextNode(veget.getPricePerKg().toString()));
                 veg.appendChild(item);
-                item = doc.createElementNS(null, "qualityOfVeget");            // Create another Element
+                item = doc.createElementNS(null, "quality-of-veget");            // Create another Element
                 item.appendChild(doc.createTextNode(veget.getQualityOfVeget().toString()));
                 veg.appendChild(item);
-                item = doc.createElementNS(null, "uniqParameter");
+                item = doc.createElementNS(null, "uniq-parameter");
                 // Create another Element
                 switch (VegetClassEnum.valueOf(vegen.vegetKind())) {
                     case LV:

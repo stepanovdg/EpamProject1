@@ -107,22 +107,22 @@ public class VegetHandler implements ContentHandler {
                         s[4] = new String(ch, start, length).replace("-","");
                     }
                     break;
-                case "weightPerKg":
+                case "weight-per-kg":
                     if (s[5] == null) {
                         s[5] = new String(ch, start, length);
                     }
                     break;
-                case "pricePerKg":
+                case "price-per-kg":
                     if (s[6] == null) {
                         s[6] = new String(ch, start, length);
                     }
                     break;
-                case "qualityOfVeget":
+                case "quality-of-veget":
                     if (s[7] == null) {
                         s[7] = new String(ch, start, length);
                     }
                     break;
-                case "uniqParameter":
+                case "uniq-parameter":
                     if (s != null && s[8] == null) {
                         s[8] = new String(ch, start, length);
 

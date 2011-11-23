@@ -93,22 +93,22 @@ public class StAXVegetParser {
                                     s[4] = reader.getText().replace("-","");
                                 }
                                 break;
-                            case "weightPerKg":
+                            case "weight-per-kg":
                                 if (s[5] == null) {
                                     s[5] = reader.getText();
                                 }
                                 break;
-                            case "pricePerKg":
+                            case "price-per-kg":
                                 if (s[6] == null) {
                                     s[6] = reader.getText();
                                 }
                                 break;
-                            case "qualityOfVeget":
+                            case "quality-of-veget":
                                 if (s[7] == null) {
                                     s[7] = reader.getText();
                                 }
                                 break;
-                            case "uniqParameter":
+                            case "uniq-parameter":
                                 if (s != null && s[8] == null) {
                                     s[8] = reader.getText();
 

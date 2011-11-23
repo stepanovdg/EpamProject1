@@ -23,13 +23,19 @@ import java.io.*;
  * @author Stepanov Dmitriy
  */
 public class ReadVeget {
-    private static final String INIT_VEGET_XML = "XML"+File.separator+"initVeget.xml";
-    private static final String LISTVEGET_TXT = "listveget.txt";
+    private String initVegetXml;
+    private String listVegetTxt;
     private VegetStorageController vsc = new VegetStorageController();
+
+    public ReadVeget(String initVegetXml, String listVegetTxt) {
+        this.initVegetXml = initVegetXml;
+        this.listVegetTxt = listVegetTxt;
+    }
 
     /**
      * @throws VegetException
      */
+
     public void readVegetToProgram(String st) throws VegetException {
 
         switch (st) {
@@ -55,7 +61,7 @@ public class ReadVeget {
 
 
             DOMParser parser = new DOMParser();
-            parser.parse(INIT_VEGET_XML);
+            parser.parse(initVegetXml);
             Document document = parser.getDocument();
             Element root = document.getDocumentElement();
             Analyzer.analyzeVeget(root);
@@ -76,7 +82,7 @@ public class ReadVeget {
             StAXVegetParser parser = new StAXVegetParser();
 
             InputStream input = null;
-            input = new FileInputStream(INIT_VEGET_XML);
+            input = new FileInputStream(initVegetXml);
 
             parser.parse(input);
         } catch (FileNotFoundException e) {
@@ -94,7 +100,7 @@ public class ReadVeget {
 
             VegetHandler contentHandler = new VegetHandler();
             reader.setContentHandler(contentHandler);
-            reader.parse(INIT_VEGET_XML);
+            reader.parse(initVegetXml);
         } catch (SAXException e) {
             String msg = "The mistake of SAX Parser in SAX ";
             throw new VegetException(msg, e);
@@ -110,7 +116,7 @@ public class ReadVeget {
     private void readVegetFromTxt() throws VegetException {
         BufferedReader in;
         try {
-            in = new BufferedReader(new FileReader(LISTVEGET_TXT));
+            in = new BufferedReader(new FileReader(listVegetTxt));
         } catch (FileNotFoundException e) {
             String msg = "Don't exist such file of listvegetables in this directory";
             throw new VegetException(msg, e);

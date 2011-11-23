@@ -19,10 +19,10 @@
         <xs:complexContent>
             <xs:extension base="generalvegetable">
                 <xs:sequence>
-                    <xs:element ref="weightPerKg"/>
-                    <xs:element ref="pricePerKg"/>
-                    <xs:element ref="qualityOfVeget"/>
-                    <xs:element ref="uniqParameter"/>
+                    <xs:element ref="weight-per-kg"/>
+                    <xs:element ref="price-per-kg"/>
+                    <xs:element ref="quality-of-veget"/>
+                    <xs:element ref="uniq-parameter"/>
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
@@ -42,9 +42,9 @@
     <xs:element name="year" type="xs:gYear"/>
     <xs:element name="month" type="xs:gMonth"/>
     <xs:element name="day" type="xs:gDay"/>
-    <xs:element name="weightPerKg" type="xs:decimal"/>
-    <xs:element name="pricePerKg" type="xs:integer"/>
-    <xs:element name="qualityOfVeget" type="xs:NCName">
+    <xs:element name="weight-per-kg" type="xs:decimal"/>
+    <xs:element name="price-per-kg" type="xs:integer"/>
+    <xs:element name="quality-of-veget" type="xs:NCName">
         <xs:simpleType>
             <xs:restriction base="xs:string">
                 <xs:enumeration value="Good"/>
@@ -53,5 +53,5 @@
             </xs:restriction>
         </xs:simpleType>
     </xs:element>
-    <xs:element name="uniqParameter" type="xs:NMTOKEN"/>
+    <xs:element name="uniq-parameter" type="xs:NMTOKEN"/>
 </xs:schema>
