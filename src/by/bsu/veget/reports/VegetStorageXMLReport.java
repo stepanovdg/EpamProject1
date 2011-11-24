@@ -20,6 +20,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintWriter;
 import java.io.StringWriter;
+import java.util.Calendar;
 
 /**
  * Created by IntelliJ IDEA.
@@ -76,17 +77,17 @@ public class VegetStorageXMLReport {
                 veg.appendChild(item);
                 Element data = doc.createElementNS(null, "data");
                 item = doc.createElementNS(null, "year");            // Create another Element
-                item.appendChild(doc.createTextNode((new Integer(veget.getColectDate().getTime().getYear())).toString()));
+                item.appendChild(doc.createTextNode((new Integer(veget.getColectDate().get(Calendar.YEAR))).toString()));
                 data.appendChild(item);
                 item = doc.createElementNS(null, "month");
-                if(veget.getColectDate().getTime().getMonth()<=9) {
-                item.appendChild(doc.createTextNode("--0"+(new Integer(veget.getColectDate().getTime().getMonth())).toString()+"--"));
+                if(veget.getColectDate().get(Calendar.MONTH)<=9) {
+                item.appendChild(doc.createTextNode("--0"+(new Integer(veget.getColectDate().get(Calendar.MONTH))).toString()+"--"));
                 }else{
-                item.appendChild(doc.createTextNode("--"+(new Integer(veget.getColectDate().getTime().getMonth())).toString()+"--"));
+                item.appendChild(doc.createTextNode("--"+(new Integer(veget.getColectDate().get(Calendar.MONTH))).toString()+"--"));
                 }
                 data.appendChild(item);
                 item = doc.createElementNS(null, "day");            // Create another Element
-                item.appendChild(doc.createTextNode("---"+(new Integer(veget.getColectDate().getTime().getDay())).toString()));
+                item.appendChild(doc.createTextNode("---"+(new Integer(veget.getColectDate().get(Calendar.DAY_OF_MONTH))).toString()));
                 data.appendChild(item);
                 veg.appendChild(data);
                 item = doc.createElementNS(null, "weight-per-kg");            // Create another Element
