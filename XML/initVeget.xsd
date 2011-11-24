@@ -28,7 +28,14 @@
         </xs:complexContent>
     </xs:complexType>
     <xs:element name="vegetable" type="veget"/>
-    <xs:element name="uid" type="xs:ID"/>
+    <xs:element name="uid">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                 <xs:length value="9"/>
+                <xs:pattern value="[a-z][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
     <xs:element name="country" type="xs:NCName"/>
     <xs:element name="data">
         <xs:complexType>
