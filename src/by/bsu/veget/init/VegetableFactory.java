@@ -19,7 +19,7 @@ import java.util.NoSuchElementException;
  */
 public class VegetableFactory implements VegetableFactoryIF {
     public final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd");
-    protected static int vegIdCounter = 0;
+    private static int vegIdCounter = 0;
     private String[] input;
     private VegetEnum vegEnum;
 

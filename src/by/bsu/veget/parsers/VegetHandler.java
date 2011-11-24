@@ -24,27 +24,27 @@ public class VegetHandler implements ContentHandler {
 
     @Override
     public void setDocumentLocator(Locator locator) {
-        //To change body of implemented methods use File | Settings | File Templates.
+
     }
 
     @Override
     public void startDocument() throws SAXException {
-        //To change body of implemented methods use File | Settings | File Templates.
+
     }
 
     @Override
     public void endDocument() throws SAXException {
-        //To change body of implemented methods use File | Settings | File Templates.
+
     }
 
     @Override
     public void startPrefixMapping(String prefix, String uri) throws SAXException {
-        //To change body of implemented methods use File | Settings | File Templates.
+
     }
 
     @Override
     public void endPrefixMapping(String prefix) throws SAXException {
-        //To change body of implemented methods use File | Settings | File Templates.
+
     }
 
     @Override
@@ -136,16 +136,16 @@ public class VegetHandler implements ContentHandler {
 
     @Override
     public void ignorableWhitespace(char[] ch, int start, int length) throws SAXException {
-        //To change body of implemented methods use File | Settings | File Templates.
+
     }
 
     @Override
     public void processingInstruction(String target, String data) throws SAXException {
-        //To change body of implemented methods use File | Settings | File Templates.
+
     }
 
     @Override
     public void skippedEntity(String name) throws SAXException {
-        //To change body of implemented methods use File | Settings | File Templates.
+
     }
 }
