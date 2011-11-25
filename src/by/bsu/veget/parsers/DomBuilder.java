@@ -14,12 +14,12 @@ import org.w3c.dom.NodeList;
  * Date: 19.11.11
  * Time: 21:00
  */
-public class Analyzer {
+public class DomBuilder extends AbstractBuilder{
 
-    private static VegetStorageController vsc = new VegetStorageController();
+    private  VegetStorageController vsc = new VegetStorageController();
 
 
-    public static void analyzeVeget(Element root) throws VegetException {
+    private void analyzeVeget(Element root) throws VegetException {
         NodeList vegetNodes = root.getElementsByTagName("vegetable");
         String[] s;
         for (int i = 0; i < vegetNodes.getLength(); i++) {
@@ -46,18 +46,22 @@ public class Analyzer {
     }
 
 
-    private static Element getBaby(Element parent, String childName) {
+    private  Element getBaby(Element parent, String childName) {
         NodeList nlist =
                 parent.getElementsByTagName(childName);
         return (Element) nlist.item(0);
     }
 
 
-    private static String getBabyValue(Element parent, String childName) {
+    private  String getBabyValue(Element parent, String childName) {
         Element child = getBaby(parent, childName);
         Node node = child.getFirstChild();
         return node.getNodeValue();
     }
 
 
+    @Override
+    void buildVeget() {
+        //To change body of implemented methods use File | Settings | File Templates.
+    }
 }

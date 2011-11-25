@@ -2,13 +2,13 @@
  *
  */
 package by.bsu.veget.data;
-
+import by.bsu.veget.parsers.
 import by.bsu.veget.exception.VegetException;
 import by.bsu.veget.ierarh.Vegetable;
 import by.bsu.veget.init.VegetableFactory;
-import by.bsu.veget.parsers.Analyzer;
-import by.bsu.veget.parsers.StAXVegetParser;
-import by.bsu.veget.parsers.VegetHandler;
+import by.bsu.veget.parsers.DomBuilder;
+import by.bsu.veget.parsers.StAXBuilder;
+import by.bsu.veget.parsers.SaxBuilder;
 import by.bsu.veget.storage.VegetStorageController;
 import com.sun.org.apache.xerces.internal.parsers.DOMParser;
 import org.w3c.dom.Document;
@@ -22,12 +22,13 @@ import java.io.*;
 /**
  * @author Stepanov Dmitriy
  */
-public class ReadVeget {
+public class ReadVegetDirector {
     private String initVegetXml;
     private String listVegetTxt;
     private VegetStorageController vsc = new VegetStorageController();
+    private AbstractBuilder builder;
 
-    public ReadVeget(String initVegetXml, String listVegetTxt) {
+    public ReadVegetDirector(String initVegetXml, String listVegetTxt) {
         this.initVegetXml = initVegetXml;
         this.listVegetTxt = listVegetTxt;
     }
@@ -36,27 +37,13 @@ public class ReadVeget {
      * @throws VegetException
      */
 
-    public void readVegetToProgram(String st) throws VegetException {
+    public void buildVeget(String st) throws VegetException {
 
-        switch (st) {
-            case "txt":
-                readVegetFromTxt();
-                break;
-            case "sax":
-                readVegetWithSAX();
-                break;
-            case "stax":
-                readVegetWithSTAX();
-                break;
-            default:
-                readVegetWithXerces();
-                break;
 
-        }
 
     }
 
-    private void readVegetWithXerces() throws VegetException {
+    private void readVegetWithDom() throws VegetException {
         try {
 
 
@@ -64,7 +51,7 @@ public class ReadVeget {
             parser.parse(initVegetXml);
             Document document = parser.getDocument();
             Element root = document.getDocumentElement();
-            Analyzer.analyzeVeget(root);
+            DomBuilder.analyzeVeget(root);
 
         } catch (SAXException e) {
             String msg = "The mistake of SAX Parser in xerces";
@@ -79,11 +66,9 @@ public class ReadVeget {
     private void readVegetWithSTAX() throws VegetException {
 
         try {
-            StAXVegetParser parser = new StAXVegetParser();
-
+            StAXBuilder parser = new StAXBuilder();
             InputStream input = null;
             input = new FileInputStream(initVegetXml);
-
             parser.parse(input);
         } catch (FileNotFoundException e) {
             String msg = "Don't exist such file of initVeget.xml in this directory";
@@ -95,10 +80,8 @@ public class ReadVeget {
     private void readVegetWithSAX() throws VegetException {
 
         try {
-
             XMLReader reader = XMLReaderFactory.createXMLReader("com.sun.org.apache.xerces.internal.parsers.SAXParser");
-
-            VegetHandler contentHandler = new VegetHandler();
+            SaxBuilder contentHandler = new SaxBuilder();
             reader.setContentHandler(contentHandler);
             reader.parse(initVegetXml);
         } catch (SAXException e) {

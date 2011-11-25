@@ -16,7 +16,7 @@ import org.xml.sax.SAXException;
  * Date: 19.11.11
  * Time: 16:27
  */
-public class VegetHandler implements ContentHandler {
+public class SaxBuilder extends AbstractBuilder implements ContentHandler {
     private VegetStorageController vsc = new VegetStorageController();
     private String[] s;
     private String currentElement;
@@ -147,5 +147,10 @@ public class VegetHandler implements ContentHandler {
     @Override
     public void skippedEntity(String name) throws SAXException {
 
+    }
+
+    @Override
+    void buildVeget() {
+        //To change body of implemented methods use File | Settings | File Templates.
     }
 }

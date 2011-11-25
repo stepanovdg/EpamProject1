@@ -18,7 +18,7 @@ import java.io.InputStream;
  * Date: 19.11.11
  * Time: 19:45
  */
-public class StAXVegetParser {
+public class StAXBuilder extends AbstractBuilder{
     private VegetStorageController vsc = new VegetStorageController();
     private String[] s;
     private String currentElement;
