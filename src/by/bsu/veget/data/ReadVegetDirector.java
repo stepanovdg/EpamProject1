@@ -2,7 +2,7 @@
  *
  */
 package by.bsu.veget.data;
-import by.bsu.veget.parsers.
+
 import by.bsu.veget.exception.VegetException;
 import by.bsu.veget.ierarh.Vegetable;
 import by.bsu.veget.init.VegetableFactory;
