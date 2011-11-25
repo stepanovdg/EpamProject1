@@ -5,10 +5,11 @@ import by.bsu.veget.ierarh.Vegetable;
 import by.bsu.veget.init.VegetableFactory;
 import by.bsu.veget.out.VegetOutManager;
 import by.bsu.veget.storage.VegetStorageController;
-import org.xml.sax.Attributes;
-import org.xml.sax.ContentHandler;
-import org.xml.sax.Locator;
-import org.xml.sax.SAXException;
+import org.xml.sax.*;
+import org.xml.sax.helpers.XMLReaderFactory;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
 /**
  * Created by IntelliJ IDEA.
@@ -150,7 +151,20 @@ public class SaxBuilder extends AbstractBuilder implements ContentHandler {
     }
 
     @Override
-    void buildVeget() {
-        //To change body of implemented methods use File | Settings | File Templates.
+    public void buildVeget(String filePath) throws VegetException {
+       try {
+            XMLReader reader = XMLReaderFactory.createXMLReader("com.sun.org.apache.xerces.internal.parsers.SAXParser");
+            reader.setContentHandler(this);
+            reader.parse(filePath);
+        } catch (SAXException e) {
+            String msg = "The mistake of SAX Parser in SAX ";
+            throw new VegetException(msg, e);
+        } catch (FileNotFoundException e) {
+            String msg = "Don't exist such file of initVeget.xml in this directory";
+            throw new VegetException(msg, e);
+        } catch (IOException e) {
+            String msg = "The mistake of I/O stream in sax analyzing initVeget.xml ";
+            throw new VegetException(msg, e);
+        }
     }
 }

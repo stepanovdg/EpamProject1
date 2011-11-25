@@ -10,6 +10,8 @@ import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamConstants;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.InputStream;
 
 /**
@@ -18,12 +20,12 @@ import java.io.InputStream;
  * Date: 19.11.11
  * Time: 19:45
  */
-public class StAXBuilder extends AbstractBuilder{
+public class StAXBuilder extends AbstractBuilder {
     private VegetStorageController vsc = new VegetStorageController();
     private String[] s;
     private String currentElement;
 
-    public void parse(InputStream input) {
+    private void parse(InputStream input) {
         XMLInputFactory inputFactory =
                 XMLInputFactory.newInstance();
         try {
@@ -37,7 +39,7 @@ public class StAXBuilder extends AbstractBuilder{
 
 
     @SuppressWarnings({"ConstantConditions"})
-    void process(XMLStreamReader reader)
+    private void process(XMLStreamReader reader)
             throws XMLStreamException {
         String qName;
         while (reader.hasNext()) {
@@ -122,6 +124,19 @@ public class StAXBuilder extends AbstractBuilder{
                 default:
                     break;
             }
+        }
+    }
+
+    @Override
+    public void buildVeget(String filePath) throws VegetException {
+        try {
+
+            InputStream input = null;
+            input = new FileInputStream(filePath);
+            this.parse(input);
+        } catch (FileNotFoundException e) {
+            String msg = "Don't exist such file of initVeget.xml in this directory";
+            throw new VegetException(msg, e);
         }
     }
 }

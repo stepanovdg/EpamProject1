@@ -31,6 +31,7 @@ import java.util.Calendar;
 public class VegetStorageXMLReport {
     private VegetStorage vglist = VegetStorageSingletone.getInstance()
             .getVegStorage();
+    private Document doc;
 
     public VegetStorageXMLReport(String filePath) {
         this.filePath = filePath;
@@ -61,67 +62,50 @@ public class VegetStorageXMLReport {
 
             dbf.setNamespaceAware(true);
             DocumentBuilder db = dbf.newDocumentBuilder();
-            Document doc = db.newDocument();
+            doc = db.newDocument();
 
             Element root = doc.createElementNS(null, "vegetables"); // Create Root Element
             for (Vegetable veget : vglist) {
                 Element veg = doc.createElementNS(null, "vegetable");
-                Element item = doc.createElementNS(null, "vegetable");  // Create element
+                Element item = doc.createElementNS(null, "vegetable");
+                Element data = doc.createElementNS(null, "data");// Create element
                 VegetEnum vegen = VegetEnum.values()[veget.getVegetEnumId()];
                 veg.setAttribute("name", vegen.toString().toLowerCase());
-                item = doc.createElementNS(null, "uid");            // Create another Element
-                item.appendChild(doc.createTextNode(idToString(veget)));
-                veg.appendChild(item);
-                item = doc.createElementNS(null, "country");            // Create another Element
-                item.appendChild(doc.createTextNode((veget.getProduceCountry())));
-                veg.appendChild(item);
-                Element data = doc.createElementNS(null, "data");
-                item = doc.createElementNS(null, "year");            // Create another Element
-                item.appendChild(doc.createTextNode((new Integer(veget.getColectDate().get(Calendar.YEAR))).toString()));
-                data.appendChild(item);
-                item = doc.createElementNS(null, "month");
-                if(veget.getColectDate().get(Calendar.MONTH)<=9) {
-                item.appendChild(doc.createTextNode("--0"+(new Integer(veget.getColectDate().get(Calendar.MONTH))).toString()+"--"));
-                }else{
-                item.appendChild(doc.createTextNode("--"+(new Integer(veget.getColectDate().get(Calendar.MONTH))).toString()+"--"));
+                createEl(veg,"uid",idToString(veget));
+                createEl(veg,"country", (veget.getProduceCountry()));
+               createEl(data,"year", (new Integer(veget.getColectDate().get(Calendar.YEAR))).toString());
+                if (veget.getColectDate().get(Calendar.MONTH) <= 9) {
+                    createEl(data,"month", "--0" + (new Integer(veget.getColectDate().get(Calendar.MONTH))).toString() + "--");
+                } else {
+                     createEl(data,"month", "--" + (new Integer(veget.getColectDate().get(Calendar.MONTH))).toString() + "--");
+
                 }
-                data.appendChild(item);
-                item = doc.createElementNS(null, "day");            // Create another Element
-                item.appendChild(doc.createTextNode("---"+(new Integer(veget.getColectDate().get(Calendar.DAY_OF_MONTH))).toString()));
-                data.appendChild(item);
+                 createEl(data,"day", "---" + (new Integer(veget.getColectDate().get(Calendar.DAY_OF_MONTH))).toString());
                 veg.appendChild(data);
-                item = doc.createElementNS(null, "weight-per-kg");            // Create another Element
-                item.appendChild(doc.createTextNode((veget.getWeightPerKg()).toString()));
-                veg.appendChild(item);
-                item = doc.createElementNS(null, "price-per-kg");            // Create another Element
-                item.appendChild(doc.createTextNode(veget.getPricePerKg().toString()));
-                veg.appendChild(item);
-                item = doc.createElementNS(null, "quality-of-veget");            // Create another Element
-                item.appendChild(doc.createTextNode(veget.getQualityOfVeget().toString()));
-                veg.appendChild(item);
-                item = doc.createElementNS(null, "uniq-parameter");
-                // Create another Element
+                 createEl(veg,"weight-per-kg", (veget.getWeightPerKg()).toString());
+                 createEl(veg,"price-per-kg", veget.getPricePerKg().toString());
+                 createEl(veg,"quality-of-veget", veget.getQualityOfVeget().toString());
                 switch (VegetClassEnum.valueOf(vegen.vegetKind())) {
                     case LV:
-                        item.appendChild(doc.createTextNode(String.valueOf((((LeafsVeget) veget).getListUniqParametr()))));
+                         createEl(veg,"uniq-parameter", String.valueOf((((LeafsVeget) veget).getListUniqParametr())));
                         break;
                     case BV:
-                        item.appendChild(doc.createTextNode(String.valueOf((((BeansVeget) veget).getBeansUniqParametr()))));
+                         createEl(veg,"uniq-parameter", String.valueOf((((BeansVeget) veget).getBeansUniqParametr())));
                         break;
                     case OV:
-                        item.appendChild(doc.createTextNode(String.valueOf((((OnionVeget) veget).getOnionUniqParametr()))));
+                         createEl(veg,"uniq-parameter", String.valueOf((((OnionVeget) veget).getOnionUniqParametr())));
                         break;
                     case RV:
-                        item.appendChild(doc.createTextNode(String.valueOf((((RootVeget) veget).getRootUniqParametr()))));
+                         createEl(veg,"uniq-parameter", String.valueOf((((RootVeget) veget).getRootUniqParametr())));
                         break;
                     case PV:
-                        item.appendChild(doc.createTextNode(String.valueOf((((PumkinVeget) veget).getPumkinUniqParametr()))));
+                         createEl(veg,"uniq-parameter", String.valueOf((((PumkinVeget) veget).getPumkinUniqParametr())));
                         break;
                     default:
                         String msg = "Unknown Vegetable Constructor: " + vegen;
                         throw new IllegalArgumentException(msg);
                 }
-                veg.appendChild(item);
+
                 root.appendChild(veg);
             }// Attach another Element - grandaugther
             doc.appendChild(root);                            // Add Root to Document
@@ -149,5 +133,16 @@ public class VegetStorageXMLReport {
         }
 
 
+    }
+
+    private void createEl(Element root,String teg, String text) {
+        root.appendChild(createElement(teg,text));
+    }
+
+    private Element createElement(String teg, String text) {
+        Element item;
+        item = doc.createElementNS(null, teg);            // Create another Element
+        item.appendChild(doc.createTextNode(text));
+        return item;
     }
 }

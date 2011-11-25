@@ -4,9 +4,14 @@ import by.bsu.veget.exception.VegetException;
 import by.bsu.veget.ierarh.Vegetable;
 import by.bsu.veget.init.VegetableFactory;
 import by.bsu.veget.storage.VegetStorageController;
+import com.sun.org.apache.xerces.internal.parsers.DOMParser;
+import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+
+import java.io.IOException;
 
 /**
  * Created by IntelliJ IDEA.
@@ -14,7 +19,7 @@ import org.w3c.dom.NodeList;
  * Date: 19.11.11
  * Time: 21:00
  */
-public class DomBuilder extends AbstractBuilder{
+public class DomBuilder extends AbstractBuilder {
 
     private  VegetStorageController vsc = new VegetStorageController();
 
@@ -61,7 +66,22 @@ public class DomBuilder extends AbstractBuilder{
 
 
     @Override
-    void buildVeget() {
-        //To change body of implemented methods use File | Settings | File Templates.
+    public void buildVeget(String filePath) throws VegetException {
+         try {
+
+
+            DOMParser parser = new DOMParser();
+            parser.parse(filePath);
+            Document document = parser.getDocument();
+            Element root = document.getDocumentElement();
+            this.analyzeVeget(root);
+
+        } catch (SAXException e) {
+            String msg = "The mistake of SAX Parser in xerces";
+            throw new VegetException(msg, e);
+        } catch (IOException e) {
+            String msg = "The mistake of I/O stream in xerces analyzing ";
+            throw new VegetException(msg, e);
+        }
     }
 }

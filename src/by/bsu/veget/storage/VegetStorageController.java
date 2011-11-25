@@ -43,6 +43,9 @@ public class VegetStorageController {
         this.removeVeget(id);
         this.addVeget(veget);
     }
+    public void sortVeget() {
+          //todo comparator  vg.
+    }
 
     public Vegetable searchNeedVeget(VegetEnum veg) {
         int index = vg.searchFirstEnterOfVeget(veg);
