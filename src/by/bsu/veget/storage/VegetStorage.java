@@ -35,9 +35,10 @@ public class VegetStorage extends ArrayList<Vegetable> implements
         return this;
     }
 
-    public void sort(String by) {
+    public VegetStorageIF sort(String by) {
         VegetComparators vc = new VegetComparators(this);
         vc.sortBy(by);
+        return this;
     }
 
     @Override
