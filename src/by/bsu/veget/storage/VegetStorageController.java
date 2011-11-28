@@ -6,6 +6,8 @@ package by.bsu.veget.storage;
 import by.bsu.veget.enums.VegetEnum;
 import by.bsu.veget.ierarh.Vegetable;
 
+import java.util.Collections;
+
 /**
  * @author Stepanov Dmitriy
  */
@@ -15,6 +17,12 @@ public class VegetStorageController {
 
     public void addVeget(Vegetable veg) {
         VegetStorageIF vegst = vg.addVeget(veg);
+        double deltMass = veg.getWeightPerKg();
+        VegetStorageSingletone.getInstance().refresh(deltMass, 0,
+                (VegetStorage) vegst);
+    }
+    public void sortVeget(String sortBy) {
+        VegetStorageIF vegst = vg.sort(sortBy);
         double deltMass = veg.getWeightPerKg();
         VegetStorageSingletone.getInstance().refresh(deltMass, 0,
                 (VegetStorage) vegst);

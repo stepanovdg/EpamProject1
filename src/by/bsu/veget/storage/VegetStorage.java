@@ -8,13 +8,12 @@ import by.bsu.veget.ierarh.Vegetable;
 import by.bsu.veget.out.VegetOutManager;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 
 /**
  * @author Stepanov Dmitriy
  */
 public class VegetStorage extends ArrayList<Vegetable> implements
-        VegetStorageIF,Comparator {
+        VegetStorageIF {
 
     private static final int INDEXOFNULLVEGETABLE = -1;
     /**
@@ -34,6 +33,11 @@ public class VegetStorage extends ArrayList<Vegetable> implements
 
         this.add(veget);
         return this;
+    }
+
+    public void sort(String by) {
+        VegetComparators vc = new VegetComparators(this);
+        vc.sortBy(by);
     }
 
     @Override
@@ -85,17 +89,5 @@ public class VegetStorage extends ArrayList<Vegetable> implements
 
 
 
-    @Override
-    public int compare(Object o1, Object o2) {
-        if (((Vegetable)o1).getVegetEnumId()>((Vegetable)o2).getVegetEnumId()) {
-            return 1;
-        }
-        if (((Vegetable)o1).getVegetEnumId()<((Vegetable)o2).getVegetEnumId()) {
-            return -1;
-        }
-        if (((Vegetable)o1).getVegetEnumId()==((Vegetable)o2).getVegetEnumId()) {
-            return 0;
-        }
-        return 0;
-    }
+
 }

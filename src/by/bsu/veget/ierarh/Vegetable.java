@@ -8,7 +8,7 @@ import java.util.GregorianCalendar;
  * @author Stepanov Dmitriy
  */
 @SuppressWarnings({"ALL"})
-public abstract class Vegetable implements VegetableIF {
+public abstract class Vegetable implements VegetableIF{
     private int id;
     private int vegetEnumId;
     private String produceCountry;
@@ -49,6 +49,7 @@ public abstract class Vegetable implements VegetableIF {
         this.setPricePerKg(veget.getPricePerKg());
         this.setQualityOfVeget(veget.getQualityOfVeget());
     }
+
     @Override
     public int hashCode() {
         int result = 7;
